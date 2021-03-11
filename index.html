@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width =device-width, initial-scale=1">
+    <title>One Page Web - HTML & CSS</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/java.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="arm-wrestling.png">
+    <script type="text/javascript">
+    'use strict;'
+        alert('Welcome');
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5fdf4ff657.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section id="banner">
+        <img src="Logotipo.png" alt="Logotipo" class="logo">
+        <div class="banner-text">
+            <h1>Dev Tony</h1>
+            <p>I get your design style at the highest performance</p>
+        </div>
+        <div class="banner-btn">
+            <a href="#about"><span></span>Read More</a>
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#work">Works</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+    <div id="menuBtn">
+        <img src="menu.png" id="menu">
+
+    </div>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "close.png";
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "menu.png";
+            }
+        }
+    </script>
+    <!--About Us-->
+
+    <section id="about">
+        <div class="title-text">
+            <p>About Me</p>
+            <h1>Why Choose Me</h1>
+        </div>
+        <div class="about-box">
+            <div class="about">
+                <h2>Experience</h2>
+                <div class="about-desc">
+                    <div class="about-icon">
+                        <i class="fas fa-user-ninja"></i>
+                    </div>
+                    <div class="about-text">
+                        <p>I created a few webpage's for my friends and also some personal projects.
+
+                            </br>Entry level knowledge in CSS and HTML
+                        </p>
+                    </div>
+                </div>
+                <h2>Studies Done</h2>
+                <div class="about-desc">
+                    <div class="about-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="about-text">
+                        <p>I have done several courses on html and css in google,
+                            </br> freecodecamp, youtube and udemy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="me.jpeg" alt="me">
+            </div>
+
+        </div>
+    </section>
+    <!--Service-->
+    <section id="service">
+        <div class="title-text">
+            <p>Services</p>
+            <h1>Proof of Table Service</h1>
+        </div>
+        <div class="container">
+            <div class="pricing-table">
+                <div class="table-item">
+                    <i class="fas fa-feather-alt"></i>
+                    <h5 class="subscription-type">Personal</h5>
+                    <ul class="features-list">
+                        <li class="features-item">Feature item 1</li>
+                        <li class="features-item">Feature item 2</li>
+                        <li class="features-item">Feature item 3</li>
+                    </ul>
+                    <span class="subscription-price">Free</span>
+                    <a href="#" class="cta">Add to Cart</a>
+                </div>
+                <div class="table-item">
+                    <i class="fas fa-american-sign-language-interpreting"></i>
+                    <h5 class="subscription-type">Teams</h5>
+                    <ul class="features-list">
+                        <li class="features-item">Feature item 1</li>
+                        <li class="features-item">Feature item 2</li>
+                        <li class="features-item">Feature item 3</li>
+                    </ul>
+                    <span class="subscription-price">200$</span>
+                    <a href="#" class="cta">Add to Cart</a>
+                </div>
+                <div class="table-item">
+                    <i class="fas fa-atom"></i>
+                    <h5 class="subscription-type">Enterprise</h5>
+                    <ul class="features-list">
+                        <li class="features-item">Feature item 1</li>
+                        <li class="features-item">Feature item 2</li>
+                        <li class="features-item">Feature item 3</li>
+                    </ul>
+                    <span class="subscription-price">500$</span>
+                    <a href="#" class="cta">Add to Cart</a>
+                </div>
+                <div class="table-item">
+                    <i class="fas fa-asterisk"></i>
+                    <h5 class="subscription-type">Gold</h5>
+                    <ul class="features-list">
+                        <li class="features-item">Feature item 1</li>
+                        <li class="features-item">Feature item 2</li>
+                        <li class="features-item">Feature item 3</li>
+                    </ul>
+                    <span class="subscription-price">1000$</span>
+                    <a href="#" class="cta">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--works-->
+    <section id="work">
+        <div class="title-text">
+            <p>Works</p>
+            <h1>FrameWork</h1>
+        </div>
+
+        <!-- /.blog-card -->
+        <div class="contenedor-card">
+            <div class="pro-card">
+                <img src="boxeo.jpg" alt="">
+                <div class="descripcion">
+                  <p>FrameWork:TailWind</p>
+                  <a href="https://antoniolup.github.io/boxeo" style="color: #fff; font-weight: 600px;" target="_BLANK">Click Here</a>
+                </div>
+            </div>
+            <div class="pro-card">
+                <img src="giorgio.jpg" alt="">
+                <div class="descripcion">
+                  <p>FrameWork:Bootstrap</p>
+                  <a href="https://antoniolup.github.io/Hair-Cut" style="color: #fff; font-weight: 600px;" target="_BLANK">Click Here</a>
+                </div>
+            </div>
+            <div class="pro-card">
+                <img src="ordenador.png" alt="">
+                <div class="descripcion">
+                  <p>FrameWork:Materialize</p>
+                  <a href="https://antoniolup.github.io/Productivity" style="color: #fff; font-weight: 600px;" target="_BLANK">Click Here</a>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        
+
+    </section>
+
+
+
+
+
+    <!--faq-->
+    <section id="faq">
+        <div class="title-text">
+            <p>FAQs</p>
+            <h1>Questions</h1>
+        </div>
+        <div class="flexbox">
+            <button class="accordion">What is my Age?</button>
+            <div class="panel">
+                <p> I'm 21 years Old.</p>
+            </div>
+
+            <button class="accordion">How long have i been programming code?</button>
+            <div class="panel">
+                <p> a few months, doing simple things and training</p>
+            </div>
+
+            <button class="accordion">What do I know about programming?</button>
+            <div class="panel">
+                <p>HTML, CSS (grid, flexbox), Ux design and
+                    <br> have started to learn Javascript
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+        <!--
+   
+    <div class="accordion">
+        
+        <div class="contentBx">
+            <div class="label">What is my Age?</div>
+            <div class="content">
+                <p>
+                    I have 21 years Old.
+                </p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">How long have i been programming code?</div>
+            <div class="content">
+                <p>
+                    a few months, doing simple things and training
+                </p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">What do I know about programming?</div>
+            <div class="content">
+                <p>
+                    HTML, CSS (grid, flexbox), Ux design and I have started to learn Javascript
+                </p>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+-->
+
+
+        <!--com-->
+        <section id="contact">
+            <div class="title-text">
+                <p>Contact</p>
+                <h1>Let's work together</h1>
+                <div class="button">
+                    <button onclick="togglePopup()"><span>Click Here</span></button>
+                </div>
+                <div class="popup" id="popup-1">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup()">&times;</div>
+                        <h2>Hi</h2>
+                        <div class="imput">
+                            <form>
+
+                                <label for="name"></label>
+                                <input type="text" name="name" required value="Hi" placeholder="Name">
+
+                                <label for="email"></label>
+                                <input type="email" name="email" placeholder="E-mail">
+
+                                <input type="submit" value="Submit">
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="social-menu">
+                    <ul>
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/antonio-jesus-l%C3%B3pez-cabeo-239428185/"
+                                target="_BLANK"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--<a class="gotop" href="#"><i class="fas fa-arrow-up"></i></a>-->
+
+        <!---->
+        <section>
+            <div>
+                <footer class="footer">
+                    <p>@CopyRight 2021</p>
+                </footer>
+            </div>
+
+        </section>
+
+
+<noscript>
+    <p>Javascript off </p>
+</noscript>
+
+
+</body>
+
+</html>
